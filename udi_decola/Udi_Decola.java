@@ -8,6 +8,15 @@ public class Udi_Decola {
 	private String nomeDiv;
 	private int num_vendas;
 
+//construtores
+public Udi_Decola(double faturamento_total, String CNPJ, String nome, String nomeDiv, int num_vendas){
+	this.faturamento_total = faturamento_total;
+	this.CNPJ = CNPJ;
+	this.nome = nome;
+	this.nomeDiv = nomeDiv;
+	this.num_vendas = num_vendas;
+}
+
 //gets e sets
 public double getFaturamento_total() {
 	return faturamento_total;
@@ -47,10 +56,4 @@ public void calculaFaturamento () {
 	faturamento_total = getNum_vendas * precoUDI + getNum_vendas * getPrecoUDIDECOLA()
 	
 }
-
-
-
-//construtores
-
-
 }

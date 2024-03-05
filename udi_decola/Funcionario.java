@@ -5,6 +5,12 @@ public class Funcionario extends Pessoa {
 	private String carteiraTrabalho;
 	private int contadorParceria;
 
+//Construtores
+public Funcionario(String nome, String CPF, String endereco, String carteiraTrabalho, int contadorParceria) {
+	super(nome, CPF, endereco);
+	this.carteiraTrabalho = carteiraTrabalho;
+	this.contadorParceria = contadorParceria;
+}
 //constantes
 final float salBase = 2300;
 final float valorRegistro = 400;

@@ -11,6 +11,18 @@ public class Voo extends Empresa_Aerea {
 	private int numVagas;
 	private String epocaAno;
 
+//Construtores
+public Voo(String codigoIden, String lclOrigem, String lclDestino, String horaSaida, String horaChegada, float preco, int numVagas, String epocaAno, String CNPJ, String nome, String nomeDiv, String dataCriacao){
+	super(CNPJ, nome, nomeDiv, dataCriacao);
+	this.codigoIden = codigoIden;
+	this.lclOrigem = lclOrigem;
+	this.lclDestino = lclDestino;
+	this.horaSaida = horaSaida;
+	this.horaChegada = horaChegada;
+	this.preco = preco;
+	this.numVagas = numVagas;
+	this.epocaAno = epocaAno;
+}
 //gets e sets
 public String getCodigoIden() {
 	return codigoIden;

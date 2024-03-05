@@ -63,6 +63,14 @@ public class Pessoa {
 	private String nome;
 	private String CPF;
 	private String endereco;
+
+
+	//Construtores
+	public Pessoa(String nome, String CPF, String endereco){
+		this.nome = nome;
+		this.CPF = CPF;
+		this.endereco = endereco;
+	}
 	
 	//gets e sets
 	public String getNome() {
@@ -83,9 +91,8 @@ public class Pessoa {
 	public void setEndereco(String endereco) {
 		this.endereco = endereco;
 	}
-	
+
 	//metodos
-	//construtores
 	
 	
 	

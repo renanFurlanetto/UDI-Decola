@@ -10,6 +10,14 @@ public class Empresa_Aerea {
 //constantes
 public static final float precoUDI = 700;
 
+//Construtores
+public Empresa_Aerea(String CNPJ, String nome, String nomeDiv, String dataCriacao){
+	this.CNPJ = CNPJ;
+	this.nome = nome;
+	this.nomeDiv = nomeDiv;
+	this.dataCriacao = dataCriacao;
+}
+
 //gets e sets
 public String getCNPJ() {
 	return CNPJ;

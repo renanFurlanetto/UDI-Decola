@@ -10,6 +10,15 @@ private float precoTotal;
 //constantes
 public static final int numViraVP = 4;
 
+//Construtores
+	public Cliente(String dataNascimento, String email, int contCompra, float precoTotal, String nome, String CPF, String endereco){
+		super(nome, CPF, endereco)
+		this.dataNascimento = dataNascimento;
+		this.email = email;
+		this.contCompra = contCompra;
+		this.precoTotal = precoTotal;
+	}
+
 //gets e sets
 public String getDataNascimento() {
 	return dataNascimento;

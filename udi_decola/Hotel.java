@@ -22,6 +22,26 @@ public class Hotel {
 //constantes
 public static final float precoUDIDECOLA = 300;
 
+//Construtores
+public Hotel(String CNPJ, String nome, String nomeDiv, String endereco, String cidade, String anoCriacao, int numEstrelas, boolean aceitaPet, boolean aceitaCancel, int numQuartos, String check_in, String check_out, String descricao, String epocaAno, String data, String nomeFuncionarioResponsavel) {
+	this.CNPJ = CNPJ;
+	this.nome = nome;
+	this.nomeDiv = nomeDiv;
+	this.endereco = endereco;
+	this.cidade = cidade;
+	this.anoCriacao = anoCriacao;
+	this.numEstrelas = numEstrelas;
+	this.aceitaPet = aceitaPet;
+	this.aceitaCancel = aceitaCancel;
+	this.numQuartos = numQuartos;
+	this.check_in = check_in;
+	this.check_out = check_out;
+	this.descricao = descricao;
+	this.epocaAno = epocaAno;
+	this.data = data;
+	this.nomeFuncionarioResponsavel = nomeFuncionarioResponsavel;
+}
+
 //gets e sets
 public String getCNPJ() {
 	return CNPJ;
