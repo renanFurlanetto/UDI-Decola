@@ -3,16 +3,14 @@ package udi_decola;
 public class Compra {
 	//atributos
 private String nomeCliente;
-private String data;
-private String hora;
+private String horaCompra;
 //passagem aerea
 //diaria em hoteis
 
 //Construtores
 public Compra();
-public Compra(String nomeCliente, String data, String hora){
-	this.data = data;
-	this.hora = hora;
+public Compra(String nomeCliente, String hora){
+	this.horaCompra = hora;
 	this.nomeCliente = nomeCliente;
 }
 //gets e sets

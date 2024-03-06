@@ -4,17 +4,18 @@ public class Voo extends Empresa_Aerea {
 	//atributos
 	private String codigoIden; //3 letras(origem) e 5 números(3 primeiros são os assentos do avião, os dois últimos o id da empresa aérea)
 	private String nomeEmpresa;
-	private String lclOrigem;
-	private String lclDestino;
-	private String horaSaida;
+	private String lclOrigem; //saopaulo.sp.br
+	private String lclDestino; //belohorizonte.bh.br
+	private String horaSaida; 
 	private String horaChegada;
 	private float preco;
 	private int numVagas;
 	private String epocaAno;
+	private String dataVoo;
 
 //Construtores
 public Voo();
-public Voo(String codigoIden, String lclOrigem, String nomeEmpresa, String lclDestino, String horaSaida, String horaChegada, float preco, int numVagas, String epocaAno, String CNPJ, String nome, String nomeDiv, String dataCriacao){
+public Voo(String codigoIden, String lclOrigem, String dataVoo, String nomeEmpresa, String lclDestino, String horaSaida, String horaChegada, float preco, int numVagas, String epocaAno, String CNPJ, String nome, String nomeDiv, String dataCriacao){
 	super(CNPJ, nome, nomeDiv, dataCriacao);
 	this.nomeEmpresa = nomeEmpresa;
 	this.codigoIden = codigoIden;
@@ -25,6 +26,7 @@ public Voo(String codigoIden, String lclOrigem, String nomeEmpresa, String lclDe
 	this.preco = preco;
 	this.numVagas = numVagas;
 	this.epocaAno = epocaAno;
+	this.dataVoo = dataVoo;
 }
 //gets e sets
 public String getCodigoIden() {
@@ -76,7 +78,22 @@ public void setEpocaAno(String epocaAno) {
 	this.epocaAno = epocaAno;
 }
 
-//metodos
+public String getNomeEmpresa() {
+	return nomeEmpresa;
+}
+
+public String setNomeEmpresa(String nomeEmpresa){
+	this.nomeEmpresa = nomeEmpresa;
+}
+
+public String getDataVoo() {
+	return dataVoo;
+}
+public void setDataVoo(String dataVoo) {
+	this.dataVoo = dataVoo;
+}
+
+	//metodos
 public float calculaPreco (String CPF) {
 	
 }

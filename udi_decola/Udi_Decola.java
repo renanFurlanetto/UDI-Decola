@@ -10,12 +10,10 @@ public class Udi_Decola {
 
 //construtores
 public Udi_Decola();
-public Udi_Decola(double faturamento_total, String CNPJ, String nome, String nomeDiv, int num_vendas){
-	this.faturamento_total = faturamento_total;
+public Udi_Decola(String CNPJ, String nome, String nomeDiv){
 	this.CNPJ = CNPJ;
 	this.nome = nome;
 	this.nomeDiv = nomeDiv;
-	this.num_vendas = num_vendas;
 }
 
 //gets e sets

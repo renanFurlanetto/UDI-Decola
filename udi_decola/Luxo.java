@@ -8,8 +8,8 @@ public class Luxo extends Hotel{
 
 //Construtores
 public Luxo();
-public Luxo(String CNPJ, String nome, String nomeDiv, String endereco, String cidade, String anoCriacao, int numEstrelas, boolean aceitaPet, boolean aceitaCancel, int numQuartos, float preco, float desconto ,String check_in, String check_out, String descricao, String epocaAno, String data, String nomeFuncionarioResponsavel) {
-	super(CNPJ, nome, nomeDiv, endereco, cidade, anoCriacao, numEstrelas, aceitaPet, aceitaCancel, numQuartos, check_in, check_out, descricao, epocaAno, data, nomeFuncionarioResponsavel);
+public Luxo(String CNPJ, String nome, String nomeDiv, String endereco, String cidade, String anoCriacao, int numEstrelas, boolean aceitaPet, boolean aceitaCancel, int numQuartos, float preco, float desconto ,String check_in, String check_out, String descricao, String data, String nomeFuncionarioResponsavel) {
+	super(CNPJ, nome, nomeDiv, endereco, cidade, anoCriacao, numEstrelas, aceitaPet, aceitaCancel, numQuartos, check_in, check_out, descricao, data, nomeFuncionarioResponsavel);
 	this.numQuartos = numQuartos;
 	this.preco = preco;
 	this.desconto = desconto;

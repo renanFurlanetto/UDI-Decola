@@ -2,12 +2,12 @@ package udi_decola;
 
 public class Funcionario extends Pessoa {
 	//atributos
-	private String carteiraTrabalho;
+	private double carteiraTrabalho;
 	private int contadorParceria;
 
 //Construtores
 public Funcionario();
-public Funcionario(String nome, String CPF, String endereco, String carteiraTrabalho, int contadorParceria) {
+public Funcionario(String nome, String CPF, String endereco, double carteiraTrabalho, int contadorParceria) {
 	super(nome, CPF, endereco);
 	this.carteiraTrabalho = carteiraTrabalho;
 	this.contadorParceria = contadorParceria;

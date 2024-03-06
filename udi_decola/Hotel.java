@@ -17,14 +17,18 @@ public class Hotel {
 	private String descricao;
 	private String epocaAno;
 	private String data;
-
+	private int qntDiasHospedagem;
 	private String nomeFuncionarioResponsavel;
+	private float multiVerao;
+	private float multiInverno;
+	private float multiPrimavera;
+	private float multiOutono;
 //constantes
 public static final float precoUDIDECOLA = 300;
 
 //Construtores
 public Hotel();
-public Hotel(String CNPJ, String nome, String nomeDiv, String endereco, String cidade, String anoCriacao, int numEstrelas, boolean aceitaPet, boolean aceitaCancel, int numQuartos, String check_in, String check_out, String descricao, String epocaAno, String data, String nomeFuncionarioResponsavel) {
+public Hotel(String CNPJ, String nome, String nomeDiv, String endereco, String cidade, String anoCriacao, int numEstrelas, boolean aceitaPet, boolean aceitaCancel, int numQuartos, String check_in, String check_out, String descricao, String data,int qntDiasHospedagem, String nomeFuncionarioResponsavel, float multiVerao, float multiInverno, float multiOutono, float multiPrimavera) {
 	this.CNPJ = CNPJ;
 	this.nome = nome;
 	this.nomeDiv = nomeDiv;
@@ -38,9 +42,13 @@ public Hotel(String CNPJ, String nome, String nomeDiv, String endereco, String c
 	this.check_in = check_in;
 	this.check_out = check_out;
 	this.descricao = descricao;
-	this.epocaAno = epocaAno;
 	this.data = data;
+	this.qntDiasHospedagem = qntDiasHospedagem;
 	this.nomeFuncionarioResponsavel = nomeFuncionarioResponsavel;
+	this.multiInverno;
+	this.multiVerao;
+	this.multiOutono;
+	this.multiPrimavera
 }
 
 //gets e sets

@@ -4,16 +4,14 @@ public class Pesquisa {
 	//atributos
 	private String origem;
 	private String destino;
-	private String dataInicio;
-	private String dataFim;
+	private String dataViagem;
 
 //Construtores
 public Pesquisa();
-public Pesquisa(String origem, String destino, String dataInicio, String dataFim){
+public Pesquisa(String origem, String destino, String dataViagem){
 	this.origem = origem;
 	this.destino = destino;
-	this.dataInicio = dataInicio;
-	this.dataFim = dataFim;
+	this.dataViagem = dataViagem;
 }
 
 //gets e sets
@@ -29,17 +27,13 @@ public String getDestino() {
 public void setDestino(String destino) {
 	this.destino = destino;
 }
-public String getDataInicio() {
-	return dataInicio;
+
+public String getDataViagem() {
+	return dataViagem;
 }
-public void setDataInicio(String dataInicio) {
-	this.dataInicio = dataInicio;
-}
-public String getDataFim() {
-	return dataFim;
-}
-public void setDataFim(String dataFim) {
-	this.dataFim = dataFim;
+
+public void setDataViagem(String dataViagem) {
+	this.dataViagem = dataViagem;
 }
 
 //metodos
