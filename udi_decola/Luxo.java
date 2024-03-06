@@ -7,6 +7,7 @@ public class Luxo extends Hotel{
 	private float desconto;
 
 //Construtores
+public Luxo();
 public Luxo(String CNPJ, String nome, String nomeDiv, String endereco, String cidade, String anoCriacao, int numEstrelas, boolean aceitaPet, boolean aceitaCancel, int numQuartos, float preco, float desconto ,String check_in, String check_out, String descricao, String epocaAno, String data, String nomeFuncionarioResponsavel) {
 	super(CNPJ, nome, nomeDiv, endereco, cidade, anoCriacao, numEstrelas, aceitaPet, aceitaCancel, numQuartos, check_in, check_out, descricao, epocaAno, data, nomeFuncionarioResponsavel);
 	this.numQuartos = numQuartos;

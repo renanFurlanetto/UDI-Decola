@@ -2,7 +2,8 @@ package udi_decola;
 
 public class Voo extends Empresa_Aerea {
 	//atributos
-	private String codigoIden;
+	private String codigoIden; //3 letras(origem) e 5 números(3 primeiros são os assentos do avião, os dois últimos o id da empresa aérea)
+	private String nomeEmpresa;
 	private String lclOrigem;
 	private String lclDestino;
 	private String horaSaida;
@@ -12,8 +13,10 @@ public class Voo extends Empresa_Aerea {
 	private String epocaAno;
 
 //Construtores
-public Voo(String codigoIden, String lclOrigem, String lclDestino, String horaSaida, String horaChegada, float preco, int numVagas, String epocaAno, String CNPJ, String nome, String nomeDiv, String dataCriacao){
+public Voo();
+public Voo(String codigoIden, String lclOrigem, String nomeEmpresa, String lclDestino, String horaSaida, String horaChegada, float preco, int numVagas, String epocaAno, String CNPJ, String nome, String nomeDiv, String dataCriacao){
 	super(CNPJ, nome, nomeDiv, dataCriacao);
+	this.nomeEmpresa = nomeEmpresa;
 	this.codigoIden = codigoIden;
 	this.lclOrigem = lclOrigem;
 	this.lclDestino = lclDestino;

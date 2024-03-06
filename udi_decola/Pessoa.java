@@ -66,6 +66,7 @@ public class Pessoa {
 
 
 	//Construtores
+	public Pessoa();
 	public Pessoa(String nome, String CPF, String endereco){
 		this.nome = nome;
 		this.CPF = CPF;

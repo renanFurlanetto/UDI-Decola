@@ -8,6 +8,7 @@ public class Pesquisa {
 	private String dataFim;
 
 //Construtores
+public Pesquisa();
 public Pesquisa(String origem, String destino, String dataInicio, String dataFim){
 	this.origem = origem;
 	this.destino = destino;

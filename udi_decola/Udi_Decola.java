@@ -9,6 +9,7 @@ public class Udi_Decola {
 	private int num_vendas;
 
 //construtores
+public Udi_Decola();
 public Udi_Decola(double faturamento_total, String CNPJ, String nome, String nomeDiv, int num_vendas){
 	this.faturamento_total = faturamento_total;
 	this.CNPJ = CNPJ;

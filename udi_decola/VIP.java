@@ -5,6 +5,7 @@ public class VIP extends Cliente{
 	private float desconto;
 
 //Construtores
+public VIP();
 public VIP(String dataNascimento, String email, int contCompra, float precoTotal, String nome, String CPF, String endereco, float desconto) {
 	super(dataNascimento, email, contCompra, precoTotal, nome, CPF, endereco);
 	this.desconto = desconto;

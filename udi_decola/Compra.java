@@ -9,6 +9,7 @@ private String hora;
 //diaria em hoteis
 
 //Construtores
+public Compra();
 public Compra(String nomeCliente, String data, String hora){
 	this.data = data;
 	this.hora = hora;

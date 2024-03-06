@@ -6,6 +6,7 @@ public class Funcionario extends Pessoa {
 	private int contadorParceria;
 
 //Construtores
+public Funcionario();
 public Funcionario(String nome, String CPF, String endereco, String carteiraTrabalho, int contadorParceria) {
 	super(nome, CPF, endereco);
 	this.carteiraTrabalho = carteiraTrabalho;

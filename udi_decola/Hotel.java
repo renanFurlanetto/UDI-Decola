@@ -23,6 +23,7 @@ public class Hotel {
 public static final float precoUDIDECOLA = 300;
 
 //Construtores
+public Hotel();
 public Hotel(String CNPJ, String nome, String nomeDiv, String endereco, String cidade, String anoCriacao, int numEstrelas, boolean aceitaPet, boolean aceitaCancel, int numQuartos, String check_in, String check_out, String descricao, String epocaAno, String data, String nomeFuncionarioResponsavel) {
 	this.CNPJ = CNPJ;
 	this.nome = nome;
