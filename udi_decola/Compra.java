@@ -8,7 +8,6 @@ private String horaCompra;
 //diaria em hoteis
 
 //Construtores
-public Compra();
 public Compra(String nomeCliente, String hora){
 	this.horaCompra = hora;
 	this.nomeCliente = nomeCliente;
@@ -34,8 +33,6 @@ public void setHora(String hora) {
 }
 
 //metodos
-public getDadosVoo
-
 //construtores
 
 

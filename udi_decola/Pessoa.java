@@ -25,7 +25,6 @@ public class Pessoa {
 
 
 	//Construtores
-	public Pessoa();
 	public Pessoa(String nome, String CPF, String endereco){
 		this.nome = nome;
 		this.CPF = CPF;
@@ -53,7 +52,8 @@ public class Pessoa {
 	}
 
 	//metodos
-	
-	
+	private boolean validarCPF(String cpf) {
+		return cpf.matches("\\d{3}\\.\\d{3}\\.\\d{3}-\\d{2}");
+	}
 	
 }

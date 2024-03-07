@@ -6,7 +6,7 @@ public class Voo extends Empresa_Aerea {
 	private String nomeEmpresa;
 	private String lclOrigem; //saopaulo.sp.br
 	private String lclDestino; //belohorizonte.bh.br
-	private String horaSaida; 
+	private String horaSaida;
 	private String horaChegada;
 	private float preco;
 	private int numVagas;
