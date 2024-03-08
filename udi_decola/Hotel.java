@@ -18,18 +18,13 @@ public class Hotel {
 	private String epocaAno;
 	private String data;
 	private int qntDiasHospedagem;
-	private String nomeFuncionarioResponsavel;
-	private float multiVerao;
-	private float multiInverno;
-	private float multiPrimavera;
-	private float multiOutono;
+	private Funcionario funcionario;
 //constantes
 public static final float precoUDIDECOLA = 300;
 
     //Construtores
-    public Hotel();
 
-    public Hotel(String CNPJ, String nome, String nomeDiv, String endereco, String cidade, String anoCriacao, int numEstrelas, boolean aceitaPet, boolean aceitaCancel, int numQuartos, String check_in, String check_out, String descricao, String data,int qntDiasHospedagem, String nomeFuncionarioResponsavel, float multiVerao, float multiInverno, float multiOutono, float multiPrimavera) {
+    public Hotel(String CNPJ, String nome, String nomeDiv, String endereco, String cidade, String anoCriacao, int numEstrelas, boolean aceitaPet, boolean aceitaCancel, int numQuartos, String check_in, String check_out, String descricao, String data,int qntDiasHospedagem, Funcionario funcionario) {
 	this.CNPJ = CNPJ;
 	this.nome = nome;
 	this.nomeDiv = nomeDiv;
@@ -45,11 +40,7 @@ public static final float precoUDIDECOLA = 300;
 	this.descricao = descricao;
 	this.data = data;
 	this.qntDiasHospedagem = qntDiasHospedagem;
-	this.nomeFuncionarioResponsavel = nomeFuncionarioResponsavel;
-	this.multiInverno = multiInverno;
-	this.multiVerao = multiVerao;
-	this.multiOutono = multiOutono;
-	this.multiPrimavera = multiPrimavera;
+	this.funcionario = funcionario;
 }
 
 //gets e sets
@@ -131,28 +122,15 @@ public String getDescricao() {
 public void setDescricao(String descricao) {
 	this.descricao = descricao;
 }
-public String getEpocaAno() {
-	return epocaAno;
-}
-public void setEpocaAno(String epocaAno) {
-	this.epocaAno = epocaAno;
-}
 public String getData() {
 	return data;
 }
 public void setData(String data) {
 	this.data = data;
 }
-public String getNomeFuncionarioResponsavel() {
-	return nomeFuncionarioResponsavel;
-}
-public void setNomeFuncionarioResponsavel(String nomeFuncionarioResponsavel) {
-	this.nomeFuncionarioResponsavel = nomeFuncionarioResponsavel;
-}
 public float getPrecoUDIDECOLA() {
 	return precoUDIDECOLA;
 }
-
 //metodos
 //construtores
 

@@ -10,12 +10,16 @@ public class Voo extends Empresa_Aerea {
 	private String horaChegada;
 	private float preco;
 	private int numVagas;
-	private String epocaAno;
+	private float multiVerao;
+	private float multiInverno;
+	private float multiPrimavera;
+	private float multiOutono;
 	private String dataVoo;
+	private Empresa_Aerea empresaAerea;
+	private int epocaAno;
 
 //Construtores
-public Voo();
-public Voo(String codigoIden, String lclOrigem, String dataVoo, String nomeEmpresa, String lclDestino, String horaSaida, String horaChegada, float preco, int numVagas, String epocaAno, String CNPJ, String nome, String nomeDiv, String dataCriacao){
+public Voo(String codigoIden, String lclOrigem, String dataVoo, String nomeEmpresa, String lclDestino, String horaSaida, String horaChegada, float preco, int numVagas, float multiInverno,float multiVerao, float multiPrimavera, float multiOutono, String CNPJ, String nome, String nomeDiv, String dataCriacao, Empresa_Aerea empresaAerea, int epocaAno){
 	super(CNPJ, nome, nomeDiv, dataCriacao);
 	this.nomeEmpresa = nomeEmpresa;
 	this.codigoIden = codigoIden;
@@ -25,8 +29,13 @@ public Voo(String codigoIden, String lclOrigem, String dataVoo, String nomeEmpre
 	this.horaChegada = horaChegada;
 	this.preco = preco;
 	this.numVagas = numVagas;
-	this.epocaAno = epocaAno;
 	this.dataVoo = dataVoo;
+	this.empresaAerea = empresaAerea;
+	this.multiInverno = multiInverno;
+	this.multiVerao = multiVerao;
+	this.multiOutono = multiOutono;
+	this.multiPrimavera = multiPrimavera;
+	this.epocaAno = epocaAno;
 }
 //gets e sets
 public String getCodigoIden() {
@@ -71,12 +80,6 @@ public int getNumVagas() {
 public void setNumVagas(int numVagas) {
 	this.numVagas = numVagas;
 }
-public String getEpocaAno() {
-	return epocaAno;
-}
-public void setEpocaAno(String epocaAno) {
-	this.epocaAno = epocaAno;
-}
 
 public String getNomeEmpresa() {
 	return nomeEmpresa;
@@ -92,12 +95,50 @@ public String getDataVoo() {
 public void setDataVoo(String dataVoo) {
 	this.dataVoo = dataVoo;
 }
+public Empresa_Aerea getEmpresaAerea(){return this.empresaAerea;}
 
+	public float getMultiInverno() {
+		return multiInverno;
+	}
+
+	public float getMultiOutono() {
+		return multiOutono;
+	}
+
+	public float getMultiPrimavera() {
+		return multiPrimavera;
+	}
+
+	public float getMultiVerao() {
+		return multiVerao;
+	}
+	public void setMultiInverno(float valor){
+		this.multiInverno = valor;
+	}
+	public void setMultiPrimavera(float valor){
+		this.multiPrimavera = valor;
+	}
+	public void setMultiOutono(float valor){
+		this.multiOutono = valor;
+	}
+
+	public float calculaPreco(){
+		if(epocaAno == 1){
+			return preco*multiVerao;
+		}
+		if(epocaAno == 2){
+			return preco*multiInverno;
+		}
+		if(epocaAno == 3){
+			return preco*multiPrimavera;
+		}
+		if(epocaAno == 4){
+			return preco*multiOutono;
+		} else {
+			return preco;
+		}
+	}
 	//metodos
-public float calculaPreco (String CPF) {
-	
-}
-
 //construtores
 
 

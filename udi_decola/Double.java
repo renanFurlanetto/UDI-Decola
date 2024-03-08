@@ -7,9 +7,8 @@ public class Double extends Standart {
 	private float desconto;
 
 	//Construtores
-	public Double();
-	public Double(String CNPJ, String nome, String nomeDiv, String endereco, String cidade, String anoCriacao, int numEstrelas, boolean aceitaPet, boolean aceitaCancel, int numQuartos, String check_in, String check_out, String descricao, String data, String nomeFuncionarioResponsavel, int numQuartosDouble, float preco, float desconto) {
-		super(CNPJ, nome, nomeDiv, endereco, cidade, anoCriacao, numEstrelas, aceitaPet, aceitaCancel, numQuartos, check_in, check_out, descricao, data, nomeFuncionarioResponsavel);
+	public Double(String CNPJ, String nome, String nomeDiv, String endereco, String cidade, String anoCriacao, int numEstrelas, boolean aceitaPet, boolean aceitaCancel, int numQuartos, String check_in, String check_out, String descricao, String data,int qntDiasHospedagem ,Funcionario funcionario, int numQuartosDouble, float preco, float desconto) {
+		super(CNPJ, nome, nomeDiv, endereco, cidade, anoCriacao, numEstrelas, aceitaPet, aceitaCancel, numQuartos, check_in, check_out, descricao, data,qntDiasHospedagem,funcionario);
 		this.numQuartos = numQuartosDouble;
 		this.preco = preco;
 		this.desconto = desconto;
@@ -34,7 +33,12 @@ public class Double extends Standart {
 	public void setDesconto(float desconto) {
 		this.desconto = desconto;
 	}
-	
+
+	public float calculaPreco() {
+		int numeroQuartos = getNumQuartos();
+		setNumQuartos(numeroQuartos - numQuartos);
+		return preco*numQuartos;
+	}
 	//metodos
 	//construtores
 	

@@ -7,9 +7,8 @@ public class Luxo extends Hotel{
 	private float desconto;
 
 //Construtores
-public Luxo();
-public Luxo(String CNPJ, String nome, String nomeDiv, String endereco, String cidade, String anoCriacao, int numEstrelas, boolean aceitaPet, boolean aceitaCancel, int numQuartos, float preco, float desconto ,String check_in, String check_out, String descricao, String data, String nomeFuncionarioResponsavel) {
-	super(CNPJ, nome, nomeDiv, endereco, cidade, anoCriacao, numEstrelas, aceitaPet, aceitaCancel, numQuartos, check_in, check_out, descricao, data, nomeFuncionarioResponsavel);
+public Luxo(String CNPJ, String nome, String nomeDiv, String endereco, String cidade, String anoCriacao, int numEstrelas, boolean aceitaPet, boolean aceitaCancel, int numQuartos, float preco, float desconto ,String check_in, String check_out, String descricao, String data, int qntDiasHospedagem, Funcionario funcionario) {
+	super(CNPJ, nome, nomeDiv, endereco, cidade, anoCriacao, numEstrelas, aceitaPet, aceitaCancel, numQuartos, check_in, check_out, descricao, data,qntDiasHospedagem,funcionario);
 	this.numQuartos = numQuartos;
 	this.preco = preco;
 	this.desconto = desconto;
@@ -33,6 +32,11 @@ public float getDesconto() {
 public void setDesconto(float desconto) {
 	this.desconto = desconto;
 }
+	public float calculaPreco() {
+		int numeroQuartos = getNumQuartos();
+		setNumQuartos(numeroQuartos - numQuartos);
+		return preco*numQuartos;
+	}
 
 //metodos
 //construtores

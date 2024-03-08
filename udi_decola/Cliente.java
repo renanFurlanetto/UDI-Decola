@@ -9,18 +9,17 @@ private String email;
 private int contCompra;
 private float precoTotal;
 
-private boolean clienteVIP;
-private float descontoVIP;
+private boolean isVip;
+private boolean isFuncionario;
 
 //constantes
 public static final int numViraVP = 4;
 
 //Construtores
-	public Cliente(String dataNascimento, String email, String nome, String CPF, String endereco, float descontoVIP){
+	public Cliente(String dataNascimento, String email, String nome, String CPF, String endereco){
 		super(nome, CPF, endereco);
 		this.dataNascimento = dataNascimento;
 		this.email = email;
-		this.descontoVIP = descontoVIP;
 	}
 
 //gets e sets
@@ -59,12 +58,11 @@ public void setPrecoTotal(float precoTotal) {
 public int getNumViraVP() {
 	return numViraVP;
 }
-public boolean getClienteVIP() {return clienteVIP;}
-public void setClienteVIP(){this.clienteVIP = true;}
 
-public boolean isClienteVIP() {return clienteVIP;}
-public float getDescontoVIP() {return descontoVIP;}
-public void setDescontoVIP(float descontoVIP) {this.descontoVIP = descontoVIP;}
+public boolean isVip() {return isVip;}
+public void setVip(boolean vip){ this.isVip = vip; }
+public boolean isFuncionario() {return isFuncionario;}
+public void setClienteFuncionario(boolean funcionario){ this.isFuncionario = funcionario; }
 
 	//metodos
 public void adicionarCPFCliente(cadastroClientes cadastroClientes) {
@@ -76,4 +74,9 @@ public static boolean validarEmail(String email) {
 	Matcher matcher = pattern.matcher(email);
 	return matcher.matches();
 	}
+public VIP viraVip(){
+		VIP vip1 = new VIP(getDataNascimento(),getEmail(), getNome(), getCPF(), getEndereco());
+		setVip(true);
+		return vip1;
+}
 }

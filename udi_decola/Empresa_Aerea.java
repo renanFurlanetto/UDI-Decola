@@ -11,7 +11,6 @@ public class Empresa_Aerea {
 public static final float precoUDI = 700;
 
 //Construtores
-public Empresa_Aerea();
 public Empresa_Aerea(String CNPJ, String nome, String nomeDiv, String dataCriacao){
 	this.CNPJ = CNPJ;
 	this.nome = nome;
@@ -50,10 +49,6 @@ public String getDataCriacao() {
 
 public void setDataCriacao(String dataCriacao) {
 	this.dataCriacao = dataCriacao;
-}
-
-public float getPreco() {
-	return preco;
 }
 
 //metodos
